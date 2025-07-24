@@ -1,9 +1,11 @@
 package com.bobocode.dao;
 
 import com.bobocode.model.Account;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface AccountDao {
     List<Account> findAll();
 

@@ -11,7 +11,7 @@ import java.util.*;
 public class Notes {
     private final Map<UUID, Note> notesMap = new HashMap<>();
 
-    public List<Note> getAll(){
+    public List<Note> getAll() {
         var noteList = new ArrayList<>(notesMap.values());
         noteList.sort(Comparator.comparing(Note::getCreatedOn));
         return noteList;

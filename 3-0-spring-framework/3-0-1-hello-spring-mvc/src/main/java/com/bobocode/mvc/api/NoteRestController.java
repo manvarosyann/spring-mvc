@@ -23,4 +23,5 @@ public class NoteRestController {
     private final Notes notes;
 
     // TODO: implement controller methods according to the javadoc verify your impl using NoteRestControllerTest
+
 }

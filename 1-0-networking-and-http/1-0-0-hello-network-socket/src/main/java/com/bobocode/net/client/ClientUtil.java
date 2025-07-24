@@ -1,6 +1,5 @@
 package com.bobocode.net.client;
 
-import com.bobocode.util.ExerciseNotCompletedException;
 import lombok.SneakyThrows;
 
 import java.io.*;
@@ -24,7 +23,8 @@ public class ClientUtil {
      */
     @SneakyThrows
     public static Socket openSocket(String host, int port) {
-        throw new ExerciseNotCompletedException(); // todo: implement according to javadoc and verify by ClientUtilTest
+        // todo: implement according to javadoc and verify by ClientUtilTest
+        return new Socket(host, port);
     }
 
     /**
@@ -62,6 +62,10 @@ public class ClientUtil {
      */
     @SneakyThrows
     public static void writeToSocket(String message, Socket socket) {
-        throw new ExerciseNotCompletedException(); // todo: implement according to javadoc and verify by ClientUtilTest
+        // todo: implement according to javadoc and verify by ClientUtilTest
+        OutputStream outputStream = socket.getOutputStream();
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream));
+        bufferedWriter.write(message);
+        bufferedWriter.flush();
     }
 }
