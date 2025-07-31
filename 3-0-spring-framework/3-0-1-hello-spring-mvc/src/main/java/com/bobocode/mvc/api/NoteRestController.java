@@ -2,6 +2,8 @@ package com.bobocode.mvc.api;
 
 import com.bobocode.mvc.data.Notes;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * This controller provides a very simple REST API for Notes. It implements two endpoints that allow you to add
@@ -19,6 +21,8 @@ import lombok.RequiredArgsConstructor;
  * via models, like in {@link com.bobocode.mvc.controller.NoteController}
  */
 @RequiredArgsConstructor
+@RestController
+@RequestMapping("/api/notes")
 public class NoteRestController {
     private final Notes notes;
 

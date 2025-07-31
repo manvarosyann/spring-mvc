@@ -13,5 +13,5 @@ import java.lang.annotation.*;
 @Documented
 @Import(StringTrimmingConfiguration.class)
 public @interface EnableStringTrimming {
-//todo: Implement EnableStringTrimming annotation according to javadoc
+
 }

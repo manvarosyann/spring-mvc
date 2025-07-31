@@ -18,7 +18,6 @@ import static java.util.Comparator.comparing;
 public class AccountService {
     private final AccountDao accountDao;
 
-    @Autowired
     public AccountService(AccountDao accountDao) {
         this.accountDao = accountDao;
     }

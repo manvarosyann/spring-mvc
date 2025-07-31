@@ -22,8 +22,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @ComponentScan(
         basePackages = "com.bobocode",
         excludeFilters = {
-                @Filter(type = FilterType.ANNOTATION, classes = EnableWebMvc.class),
-                @Filter(type = FilterType.ANNOTATION, classes = Controller.class)
+                @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class),
+                @Filter(type = FilterType.ANNOTATION, value = Controller.class)
         }
 )
 public class RootConfig {

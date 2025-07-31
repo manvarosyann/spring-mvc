@@ -18,7 +18,7 @@ import static java.util.stream.Collectors.toList;
  * Its bean is called "accountDao". And it uses constructor with explicit autowired annotation in order to inject
  * {@link TestDataGenerator} instance.
  */
-@Component
+@Component("accountDao")
 public class FakeAccountDao implements AccountDao {
     private List<Account> accounts;
 
